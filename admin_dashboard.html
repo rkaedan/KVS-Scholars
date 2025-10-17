@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head><title>Admin Dashboard</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - KVS Scholars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
-<h2>Admin Dashboard</h2>
-
-<h3>Upload Textbook / Notes</h3>
-<form method="POST" enctype="multipart/form-data">
-    File: <input type="file" name="file"><br>
-    Class: <input type="text" name="class_name"><br>
-    Subject: <input type="text" name="subject"><br>
-    Chapter: <input type="text" name="chapter"><br>
-    <button type="submit">Upload</button>
-</form>
-
-<h3>Uploaded Files</h3>
-<ul>
-{% for f in files %}
-    <li>{{ f.filename }} - Class {{ f.class_name }} - {{ f.subject }} - {{ f.chapter }}</li>
-{% endfor %}
-</ul>
-
-<a href="/admin/register_school">Register School</a>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin!</p>
+        <ul>
+            <li><a href="#">📚 Upload Textbooks/Notes</a></li>
+            <li><a href="#">🏫 Register Schools</a></li>
+        </ul>
+    </div>
 </body>
 </html>

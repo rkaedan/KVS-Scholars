@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Register School</title></head>
+<body>
+<h2>Register School</h2>
+<form method="POST">
+    Name: <input type="text" name="name"><br>
+    Login ID: <input type="text" name="login_id"><br>
+    Password: <input type="text" name="password"><br>
+    <button type="submit">Register</button>
+</form>
+
+<h3>Registered Schools</h3>
+<ul>
+{% for s in schools %}
+    <li>{{ s.name }} - {{ s.login_id }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
