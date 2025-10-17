@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVS Scholars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>KVS Scholars</h1>
+        <p>Welcome to the KVS Scholars Database.</p>
+        <div class="button-container">
+            <a href="{{ url_for('main.admin_login') }}" class="btn">Admin Login</a>
+            <a href="{{ url_for('main.school_login') }}" class="btn">School Login</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard - KVS Scholars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Available Textbooks and Notes</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Class</th>
+                <th>Subject</th>
+                <th>Chapter</th>
+                <th>File</th>
+                <th>Uploaded By</th>
+            </tr>
+            {% for file in uploads %}
+            <tr>
+                <td>{{ file.class_name }}</td>
+                <td>{{ file.subject }}</td>
+                <td>{{ file.chapter }}</td>
+                <td><a href="{{ file.file_url }}" target="_blank">{{ file.file_name }}</a></td>
+                <td>{{ file.uploader_type }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
