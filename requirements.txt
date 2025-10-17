@@ -1,8 +1,17 @@
+# Flask web framework
 Flask>=2.3.0,<2.4.0
-Flask-SQLAlchemy==3.0.4
-Flask-Migrate==4.0.4
-Flask-Cors==4.0.5
-gunicorn==21.2.0
-psycopg2-binary==2.9.9
 
+# Database ORM
+Flask-SQLAlchemy>=3.0.4,<4.0.0
 
+# Database migrations
+Flask-Migrate>=4.0.4,<5.0.0
+
+# Handling CORS
+Flask-Cors>=3.0.10,<4.0.0
+
+# Optional: environment variables
+python-dotenv>=1.0.0,<2.0.0
+
+# Optional: for forms
+WTForms>=3.0.1,<4.0.0
