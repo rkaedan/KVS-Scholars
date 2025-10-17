@@ -1,20 +1,8 @@
-# Flask web framework
 Flask>=2.3.0,<2.4.0
-
-# Database ORM
 Flask-SQLAlchemy>=3.0.4,<4.0.0
-
-# Database migrations
 Flask-Migrate>=4.0.4,<5.0.0
-
-# Handling CORS
 Flask-Cors>=3.0.10,<4.0.0
-
-# Optional: environment variables
 python-dotenv>=1.0.0,<2.0.0
-
-# Optional: for forms
 WTForms>=3.0.1,<4.0.0
-
-# Production server for Flask
 gunicorn>=20.1.0,<21.0.0
+
